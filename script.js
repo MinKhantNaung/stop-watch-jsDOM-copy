@@ -31,6 +31,7 @@ const startTime = () => {
 
 let intervalId;
 startButtonTag.addEventListener("click", () => {
+  clearInterval(intervalId);
   intervalId = setInterval(startTime, 1000);
 });
 
